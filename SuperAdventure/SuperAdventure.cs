@@ -17,9 +17,6 @@ namespace SuperAdventure
             InitializeComponent();
         }
 
-        private void testButton_Click(object sender, EventArgs e)
-        {
-            goldLabel.Text = "123";
-        }
+        
     }
 }
