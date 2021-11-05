@@ -1,4 +1,6 @@
-﻿namespace Engine
+﻿using System.Collections.Generic;
+
+namespace Engine
 {
     public class Quest
     {
@@ -14,6 +16,8 @@
 
         public Item RewardItem { get; set; }
 
+        public List<QuestCompletionItem> QuestCompletionItems { get; set; }
+
         public Quest(int id, string name, string description, int rewardExperiencePoints, int rewardGold)
         {
             Id = id;
@@ -25,6 +29,8 @@
             RewardExperiencePoints = rewardExperiencePoints;
 
             RewardGold = rewardGold;
+
+            QuestCompletionItems = new List<QuestCompletionItem>();
         }
     }
 }
