@@ -12,6 +12,8 @@
 
         public int RewardGold { get; set; }
 
+        public Item RewardItem { get; set; }
+
         public Quest(int id, string name, string description, int rewardExperiencePoints, int rewardGold)
         {
             Id = id;
